@@ -161,6 +161,8 @@ model = Sequential([
 
     # Pooling layer to downsample
     MaxPooling2D((2,2)),
+
+    # Drops out 10% of neurons
     Dropout(0.1),
 
     # --- Second Convolutional Block ---
