@@ -326,6 +326,7 @@ print(classification_report(y_test, y_pred, target_names=labels))
 # =========================
 # 12. VISUALIZE SOME RESULTS
 # =========================
+y_pred = np.argmax(model.predict(X_test), axis=-1)
 def plot_samples(images, true_labels, pred_labels=None, n=12):
     """
     Plots a grid of sample images with their true and optionally predicted labels.
